@@ -1,1 +1,138 @@
-<h1>hello dosto</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Nishu ❤️</title>
+    <style>
+        /* Modern CSS Reset & Fonts */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffe3e3 0%, #ffd1d1 50%, #ffa8a8 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Beautiful Card Styling */
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(230, 73, 73, 0.2);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            z-index: 10;
+            animation: fadeIn 1.5s ease-in-out;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        /* Heart Icon & Animation */
+        .heart-icon {
+            font-size: 5rem;
+            color: #ff4d6d;
+            display: inline-block;
+            animation: heartbeat 1.2s infinite;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #ff3366;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        p {
+            color: #4a4a4a;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Custom Interactive Button */
+        .btn {
+            background: linear-gradient(45deg, #ff4d6d, #ff758f);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 77, 109, 0.6);
+        }
+
+        /* Floating Background Hearts */
+        .floating-heart {
+            position: absolute;
+            color: rgba(255, 77, 109, 0.3);
+            font-size: 1.5rem;
+            bottom: -50px;
+            animation: float Up 6s linear infinite;
+        }
+
+        /* Keyframe Animations */
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            20% { transform: scale(1.15); }
+            40% { transform: scale(1); }
+            60% { transform: scale(1.15); }
+            80% { transform: scale(1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Hearts Grid -->
+    <div class="floating-heart" style="left: 10%; animation-duration: 5s; font-size: 2rem;">❤️</div>
+    <div class="floating-heart" style="left: 25%; animation-duration: 7s; animation-delay: 2s;">💖</div>
+    <div class="floating-heart" style="left: 40%; animation-duration: 6s; animation-delay: 1s; font-size: 2.5rem;">❤️</div>
+    <div class="floating-heart" style="left: 65%; animation-duration: 8s; animation-delay: 3s;">💗</div>
+    <div class="floating-heart" style="left: 80%; animation-duration: 5s; animation-delay: 0.5s; font-size: 1.8rem;">❤️</div>
+
+    <!-- Main Content Card -->
+    <div class="card">
+        <div class="heart-icon">❤️</div>
+        <h1>I Love You, Nishu!</h1>
+        <p>You make every single day brighter, happier, and infinitely more beautiful just by being in it.</p>
+        <button class="btn" onclick="revealMessage()">Click For a Surprise</button>
+    </div>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        function revealMessage() {
+            alert("💖 You are the best thing that ever happened to me, Nishu! Forever and always. 💖");
+        }
+    </script>
+
+</body>
+</html>
